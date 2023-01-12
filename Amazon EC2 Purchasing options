@@ -1,0 +1,96 @@
+Amazon EC2 Purchasing options
+1.Ondemand
+2.Dedicated Instances.
+3.Dedicated Host
+4.Spot Instances.
+5.Scheduler Instances.
+6.Reserved Instances.
+(a)Standard RI (b)Convertible RI (c)Schedule RI 
+
+Aws on demand Instances are virtual servers that run in AWS or AWS relational Database service (RDS) and are purchased at a fixed rate per hour.
+Aws recommends using on-demand Instances for applications with short-term, irregular workloads that cannot be interrupted
+These are also suitable for use during testing and development of applications on EC2
+You can increase or decrease your compute capacity depending on the demands of your application.
+
+Windows charged per hour.
+Linuxcharged per seconds.
+
+Dedicated Instances: -
+Dedicated instances are run in a VPC on Hardware that is dedicated to a single Customer.
+Your dedicated instances are physically isolated at the host hardware level from instances that belongs to other AWS Account.
+Dedicated Instances may share Hardware with other instances from the same AWS account that are not dedicated instances.
+Pay for dedicated Instances On-demand save up to 70% by purchasing reserve instances or save up to 90% by purchasing spot instances.
+
+
+Dedicated Host: -
+An Amazon Ec2 Dedicated host is a physical server with Ec2 instance capacity fully dedicated to your use.
+some licenses are run only one hardware one time. suppose we have installed one license on one hardware then it will not run to other hardware. If you change the hardware then it will ask again the license key in those cases, we have to purchase dedicated Host.
+Pay for a physical Host that is fully dedicated to running your Instances, and bring your existing per-socket, per-core, per-vm software license to reduce cost.
+Amazon Linux and AWS market place AMI’s can be launched onto Dedicated Hosts.
+
+
+SPOT INSTANCES: -
+Spot instances are spare EC2 capacity that can save you up to 90% off On-demand prices that AWS can interrupt with a 2 min notification. Spot uses the same underlying EC2 instances as On-demand and reserved instances and is best suited for flexible workloads.
+You can use spot instances for various test & Development workloads. 
+
+Reserved instances: -
+An Amazon EC2 Reserved instances provide a significant (up to 75%) compared to On-demand pricing and provide a capacity reservation when used in a specific Availability zone.
+we reserved the instances between 1 to 3 years. 
+
+Types of Reserved Instances: -
+1.Standard RI. (Discount up to 75%) (This standard RI is not convertible we can’t change ram, vcpu, instance type later)
+2.Convertible RI. (Discount up to 54%, If you are not sure which instance, we can choose we can choose convertible RI we can change RAM, Instance TYPE, VCPU later as well.)
+“We can change the configuration of our convertible RI using the EC2 management console. Or get the reserved Instance management Quota API”
+3.Scheduled RI. These are available to launch within the time window you reserve.
+
+
+Scheduled Instances: -
+Scheduled Instances enable you to purchase capacity reservations that recur on a daily, weekly, or monthly basis with a specified start time and duration for a one -year term.
+Or
+Scheduled instances are those instances suppose if you have some imp work which runs on weekend between 09 am to 6 Pm rest days you no need in that case you can choose scheduled instances we need to pay from 09 am to 06 pm either you are using or not. Duration time is one year with advance payment.
+Scheduled Instances are a good choice for workloads that do not run continuously but do run on a regular schedule.
+Ex: Some batch processing runs on end of the week. 
+
+Ec2 Access: -
+To access instances, you need a key and key pair name.
+You can download the private key only one.
+The Public key is saved by aws to match it to the key pair name, and private key when you try to login to the EC2 instances.
+Without key pairs we cannot connect access instances via rdp or ssh (Linux)
+There is 20 EC2 instances soft limit per region on account. You can submit a request to AWS to increase it.
+
+EC2 status Check: -
+By default, AWS ec2 service performs automated status checks every one minute.
+This is done on every running Ec2 instances to identify any H/W or S/W issue.
+Status checks is build into the AWS Ec2 instances. They cannot be configured, deleted, or disable.
+Ec2 services can send its metric data to AWS CloudWatch every 5 minutes (enabled by default). Enabled detailed monitoring is chargeable and sends metric in every 1 min. 
+You are not charged for EC2 instances if they are stopped, however attached EBS volumes incur charges. (no need to pay ec2 instances but if we have attached extra volume or EBS then storage charges we need to pay)
+EBS Back ec2 instance: - Root Volume EBS
+Instance store Backed Ec2 instances: -Instance Store
+
+When you stop an EBS Backed EC2 Instance: -
+Instance perform a shutdown.
+State change from running to stop.
+EBS volume remain attached to the instance.
+Any data cached in RAM or Instance store volume is gone.
+Instances retain its private ipv4 and ipv6 addresses.
+Instances releases its public ipv4 addresses back to Aws Pool (Public ip are dynamic)
+Instances retain its Elastic IP addresses. (Its static)
+EBS (Network Attach storage-NAS)
+Instance Storage (Direct Attach storage-DAS)
+When you Termination an EBS Backed EC2 Instance: -
+When you terminate a running instance. The instance state changes as follow 
+Runningshutting downterminated
+By default, EBS root devices volumes are deleted automatically when the Ec2 instances are terminated.
+Any additional (non-boot/boot) volumes attached to the instances by default ,persist after the instances is terminated.
+
+
+
+Ec2 Bare Metal instances 
+In some case we can’t directly create ec2 instances we can check in which hardware our instances is running.
+Non-Virtualised environment.
+Operating system runs directly on Hardware.
+Suitable for licensing restricted tier-1 Business critical application.
+Ex: - i3metal, i5metal, r5metal, z1dmetal, u6tb1metal
+
+
+
