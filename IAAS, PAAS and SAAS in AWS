@@ -1,0 +1,70 @@
+Services in cloud
+1.IAAS (Infrastructure as a service)
+2.PAAS (Platform as a service)
+3.SAAS (software as a service)
+
+IAAS
+O.S
+Virtualization
+Server
+Storage
+Network
+
+
+PAAS
+Data
+Runtime
+Middleware
+O.S
+Virtualization
+Server
+Storage
+Network
+
+SAAS
+Application
+Data
+Runtime
+Middleware
+O.S
+Virtualization
+Server
+Storage
+Network
+
+
+Deployment models in cloud
+1.Public cloud.
+2.Private cloud.
+3.Hybrid cloud
+
+Public Cloud is a type of cloud hosting that easily allows the accessibility of systems & its services to its clients/users. Some examples of companies that provide public cloud facilities are IBM, Google, Amazon, Microsoft, etc. This cloud service is open for use. The public cloud is better suited for business purposes for managing the load. 
+The advantages of the public cloud are:
+1.	Flexible
+2.	Reliable
+3.	High Scalable
+4.	Low cost
+5.	Place independence
+This type also holds some disadvantages, such as:
+1.	Less Secured
+2.	Poor Customizable
+
+Private Cloud is also termed as 'Internal Cloud', which allows the accessibility of systems and services within a specific boundary or organization. The cloud platform is implemented in a cloud-based secure environment guarded by advanced firewalls under the surveillance of the IT department that belongs to a particular organization. Private clouds permit only authorized users, providing the organizations greater control over data and its security. Business organizations that have dynamic, critical, secured, management demand-based requirements should adopt Private Cloud.
+The advantages of using a private cloud are:
+1.	Highly private and secured: Private cloud resource sharing is highly secured.
+2.	Control Oriented: Private clouds provide more control over their resources than public clouds as it can be accessed within the organization's boundary.
+The Private cloud has the following disadvantages:
+1.	Poor scalability: Private type of clouds is scaled within internal limited hosted resources.
+2.	Costly: It provides secured and more features, so it's more expensive than a public cloud.
+3.	Pricing: is inflexible; i.e., purchasing new hardware for up-gradation is more costly.
+4.	Restriction: It can be accessed locally within an organization and is difficult to expose globally.
+Hybrid Cloud is another cloud computing type, which is integrated, i.e., it can be a combination of two or more cloud servers, i.e., private, public, or community combined as one architecture, but remain individual entities. Non-critical tasks such as development and test workloads can be done using the public cloud. In contrast, critical tasks that are sensitive such as organization data handling, are done using a private cloud. 
+Advantages of Hybrid Cloud Computing are:
+1.	Flexible
+2.	Secure
+3.	Cost-Effective
+4.	Rich Scalable
+Disadvantages of Hybrid Cloud are:
+1.	Complex networking problem
+2.	Organization's security Compliance
+
