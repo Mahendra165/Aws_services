@@ -1,0 +1,64 @@
+Chapter-03: -Types of EC2 Instances
+
+1.Amazon Ec2 Provides Scalable Computing Capacity in the AWS Cloud.
+2.We can use Amazon Ec2 to launch as many or as few virtual servers as we need , configure security and networking and manage storage.
+3.Amazon Ec2 enables you to scale up or scale Down the instances
+4.Amazon Ec2 is having two storage EBS and Instance Store. While we stored O.s
+5.Preconfigured templates are available Know as Amazon Machine Image.
+6.By default when we create an Ec2 account with amazon our account is limited to a maximum of 20 Instances per Ec2 region with two default high I/O instances
+
+Types of Ec2 Instances.
+1.Genral Purpose. Balanced memory & CPU
+2. Compute Optimized. More CPU than RAM
+3. Memory Optimized. More RAM
+4.Accelerated computing. Graphics Optimized
+5.Storage optimized.  Low latency, Basically used for DB servers
+
+
+1.Genral Purpose: -General purpose instances provide a balance of compute, memory, and networking resources, and can be used for a verity of workloads.
+        Three Series in General Purpose(AMT)
+       ==>A series (Medium, Large) A1
+       ==>M Series (Large)M4, M5, M5a, M5ad, M5d
+       m4 instance  VCPU-->2 to 4 (max),RAM-->8GB to 160GB(max),Instance storage-->EBS only
+       M5, M5a, M5ad, M5d VCPU-->2 to 96 (max),RAM-->8 to 384(MAX),Instance storage-->EBS &NVMe SSD
+       ==>T Series (nano, small, medium, large)T2, T3, T3a
+       vcpu-->2 to 8,RAM-->0.5 to 32 GB
+        Available in four sizesnano, small, medium, large
+        
+2. Compute Optimized: -Compute optimized instances are ideal for compute-bound applications that benefit from high-performance processors.
+c4, c5, c5n 
+c3-->Previous version
+c4-->vpc:-2 to 36  RAM-->3.75 to 60 GB  Storage-->EBS only  Network Bandwidth-->10gbps
+c5-->vpc:-2 to 72 RAM-->4 to 192 GB Network Bandwidth-->upto 25gbps Instance storage-->EBS &NVMe SSD
+
+3. Memory Optimized: - Memory optimized instances are designed to deliver fast performance for workloads that process large data sets in memory.
+R, X and Z series
+R4,R5,R5a,R5ad,R5d
+VCPU-->2 to 96 RAM-->16 to 768 GB Instance storage-->EBS &NVMe SSD
+
+X1,X1e
+VCPU-->4 to 128 RAM-->122 to 3904 GB Instance storage-->SSD 
+
+Z1d
+VCPU-->2 to 48 RAM-->16 to 384Gb Instance storage-->NVMe SSD
+
+4.Accelerated computing: - If you require high processing capability, you'll benefit from using accelerated computing instances, which provide access to hardware-based compute accelerators such as Graphics Processing Units (GPUs), Field Programmable Gate Arrays (FPGAs), or AWS Inferentia.
+P,G,F Series 
+p2 VCPU-->4 to 64 GPU-->1 to 16 RAM-->12 to 192GB Network Bandwidth-->25gbps
+p3 VCPU-->8 to 96 RAM-->61 to 768 GB storage-->ssd & EBS
+G2,G3 VCPU-->4 to 64 GPU-->1 to 4 RAM-->30.5 to 488GB  GPU Memory-->8 to 32 Gb Newtork performance-->25gbps
+F1 Instances VCPU-->8 to 64 ,FPGA(field programable gate arrays)-->1 to 8 RAM-->122 to 976 GB storage-->NVMe SSD
+
+
+
+5.Storage optimized: - Storage optimized instances are designed for workloads that require high, sequential read and write access to very large data sets on local storage. They are optimized to deliver tens of thousands of low-latencies, random I/O operations.
+I, D, H Series
+I3,I3en
+VCPU-->2 to 96 RAM-->16 to 768 GB local storage-->NVMe SSD Newtork performance-->25gbps to 100gbps
+
+D2 Instance
+VCPU-->4 to 36 RAM-->30.5 to 244 GB storage-->SSD
+
+H1 Instances
+Vcpu-->8 to 64 RAM-->32 to 256 GB  storage-->HDD
+
