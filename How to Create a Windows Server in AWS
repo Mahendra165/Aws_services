@@ -1,0 +1,20 @@
+How to Create a Windows Server in AWS
+Servicecomputeec2launch instanceselect windows machine (free tier)Launch
+Select instanceconnectdownload remote desktop connection fileget passwordattach key pairdecrypt password (copy)open downloaded rdp file and paste password 
+
+How to Install webserver IIS and Create Webpage on windows Server
+Login to your win instanceserver manageradd roles and featuresNext  role based or feature based next  web server (iis) Installclose
+
+Open C driveopen inetpubwwwrootctrl+a delete open new text documentwrite this is my first static websitesave as index.html and select all filessave
+
+Copy public ipand paste on chrome website is ready 
+How to attach extra volume in existing windows machine in AWS
+While creating machine we can add extra volume.
+Connect machineserver managerfile and storage servicesdisksnow you new disk also showing.
+
+If you want to add disk after instance creation: - 
+Aws consolevolumescreate volselect volumeaction attach volumeselect your instanceattach
+Login win instance server managerfile and storage servicesdisksselect new volbring onlineagain select diskright clickcreate new volumeCreate
+
+Check metadata
+Curl http://169.254.169.254/latest/meta-data
