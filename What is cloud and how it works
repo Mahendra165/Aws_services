@@ -1,0 +1,26 @@
+What is cloud and how it works
+
+Cloud computing is a on demand delivery of compute power, database, storage, applications, and other IT resources through a cloud service platform via the internet with pay-as-you-go pricing model.
+
+Why we called cloud only: cloud is mixture of different-different gases and water but in the end we desired output as a rain same thing we can use these resources whatever our desired suppose we required database, suppose we required servers we can get through cloud.
+
+Top cloud providers.
+1.Aws (2006)
+2.Azure
+3.GCP
+4.Alibaba cloud
+
+Characteristics of cloud
+1.On demand self-service. (Whenever required we can access)
+2.Broad Network access. (we can access our resource but we required Internet only)
+3.Scalability. (Scale up and scale down servers as per requirements)
+4.Resource pooling. (all resources are available we need to just pull and use)
+5.Measured services. (everything calculated in the background)
+
+Certifications: - 150$
+1.Aws solution architect
+(a)Associate level (b)Professional
+2.Aws -Devops
+(a)Associate level (b)Professional
+3.Aws-sysops (solution architect + Operations) systemadmin +operations
+(a)Associate level (b)Professional
